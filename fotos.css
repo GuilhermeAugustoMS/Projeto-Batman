@@ -1,0 +1,138 @@
+.kdam-thmor-pro-regular {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    list-style:none;
+    text-decoration: none;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family:"Kdam Thmor Pro", sans-serif;
+}
+
+li:hover{
+    color: #D21617;
+}
+
+#logo-fotos{
+    width: 150px;
+    height:auto ;
+}
+
+#banner {
+    background-image: url("https://legadodadc.com.br/wp-content/uploads/2021/11/FD1vP6lWQAMNHQl-1.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.fotos-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.fotos-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.fotos {
+    width: 80%;
+    height: 200px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    flex-direction: column ;
+    justify-content: flex-end;
+    padding: 10px 100px 20px 10px;
+    color: #fff;
+    font-family:"Kdam Thmor Pro", sans-serif;
+   
+}
+
+.fotos:hover{
+    transform: scale(1.05);
+}
+
+.photo-1{
+    background-image: url("https://midias.correiobraziliense.com.br/_midias/jpg/2022/01/20/675x450/1_26157815-7354644.jpg?20220120100834?20220120100834")
+
+}
+
+.photo-2 {
+    background-image: url("https://cinemacao.com/wp-content/uploads/2022/03/batman-2-1130x590.jpg");
+}
+
+.photo-3 {
+    background-image: url("https://i0.wp.com/br.nacaodamusica.com/wp-content/uploads/2022/03/the_batman-800x540.jpg");
+
+}
+
+.photo-4 {
+    background-image: url("https://www.tribunapr.com.br/wp-content/uploads/sites/56/2022/02/28121731/rev-1-TBM-11721r_High_Res_JPEG-970x550.jpeg");
+
+} 
+
+.photo-5 {
+    background-image: url("https://variety.com/wp-content/uploads/2022/02/The-Batman-03.jpg?w=1000");
+
+}
+.photo-6 {
+    background-image: url("https://rollingstone.uol.com.br/media/_versions/zoe_kravitz_divulgacao_widelg.jpg");
+
+}
+
+
+@media(max-width: 768px) {
+    .footer-navigation{
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    #banner {
+        background-position: 40%;
+    }
+    .fotos-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+    
+}
